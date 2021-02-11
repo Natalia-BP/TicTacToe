@@ -1,24 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+//Components
+import { ChooseWeapon } from "./ChooseWeapon";
 
-//create your first component
 export function Home() {
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		// Div madre de todo
+		<>
+			<div className="titles my-4">
+				{/* Div titulos */}
+				<div>
+					<h1 className="text-white text-center">
+						Tic Tac Toe in React.JS
+					</h1>
+				</div>
+
+				<ChooseWeapon />
+			</div>
+		</>
 	);
 }
