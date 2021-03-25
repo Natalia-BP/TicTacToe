@@ -151,11 +151,11 @@ export class Board extends React.Component {
 		return (
 			<div className="principal-board">
 				{this.state.winner === null ? (
-					<div className="status d-flex justify-content-center text-warning">
+					<div className="status d-flex justify-content-center">
 						<h2>Turn: {this.state.turno === 1 ? "X" : "O"}</h2>
 					</div>
 				) : (
-					<div className="d-flex justify-content-center text-warning">
+					<div className="d-flex justify-content-center">
 						<h2>Winner {this.state.winner}</h2>
 					</div>
 				)}
